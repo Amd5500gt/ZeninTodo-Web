@@ -134,7 +134,7 @@ ZeninTodo-Website/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ZeninTodo-Website.git
+git clone https://github.com/Amd5500gt/ZeninTodo-Web.git
 ```
 
 Open the project
