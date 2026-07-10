@@ -6,11 +6,6 @@ A modern, responsive landing page for the **Zenin Todo** Android application.
 
 🌐 **Live Website:** https://zenintodo-web.pages.dev/
 
-<img src="assets/logo.png" width="120" alt="Zenin Todo Logo">
-
-[🌍 Live Demo](https://zenintodo-web.pages.dev/) •
-[📥 Download APK](https://zenintodo-web.pages.dev/assets/zeninTodo.apk)
-
 </div>
 
 ---
