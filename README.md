@@ -1,204 +1,68 @@
 <div align="center">
 
-# 📝 Zenin Todo Website
+# 📝 Zenin Todo Web
 
-A modern, responsive landing page for the **Zenin Todo** Android application.
+A clean and responsive landing page for the **Zenin Todo** Android app.
 
-🌐 **Live Website:** https://zenintodo-web.pages.dev/
+[🚀 Live Website](https://zenintodo-web.pages.dev/) •
+[📥 Download APK](https://zenintodo-web.pages.dev/assets/zeninTodo.apk)
 
 </div>
 
 ---
 
-# ✨ About
+## ✨ Features
 
-Zenin Todo Website is a clean and modern landing page built to showcase the **Zenin Todo Android App**.
-
-The website provides:
-
-- 📥 APK Download
-- ⭐ App Information
-- 📱 Screenshots
-- ✨ Features
-- 💬 User Reviews
+- 📥 Direct APK Download
+- 📱 Responsive Design
+- ⭐ Play Store Inspired UI
+- 🖼️ Screenshot Gallery
+- 💬 Reviews Section
 - ❓ FAQ
-- 📞 Contact Section
-- 📱 Fully Responsive Design
-
-The website is optimized for desktop, tablet and mobile devices and is designed with a modern UI inspired by popular Android app stores while using original branding and assets. :contentReference[oaicite:0]{index=0}
+- ⚡ Fast & Lightweight
 
 ---
 
-# 🚀 Live Website
-
-### 🌐
-
-**https://zenintodo-web.pages.dev/**
-
----
-
-# 📦 Download APK
-
-APK Location
-
-```text
-/assets/zeninTodo.apk
-```
-
----
-
-# 📂 Project Structure
-
-```text
-ZeninTodo-Website/
-
-│
-
-├── index.html
-
-├── style.css
-
-├── script.js
-
-│
-
-├── assets/
-
-│   ├── zeninTodo.apk
-│   ├── logo.png
-│   ├── hero.png
-│   ├── screenshot1.png
-│   ├── screenshot2.png
-│   ├── screenshot3.png
-│   ├── screenshot4.png
-│   ├── user1.jpg
-│   ├── user2.jpg
-│   └── user3.jpg
-
-│
-
-└── README.md
-```
-
----
-
-# 🎯 Features
-
-- Modern Landing Page
-- Beautiful Hero Section
-- Direct APK Download
-- Responsive Layout
-- Animated UI
-- Screenshot Gallery
-- Reviews Section
-- FAQ Section
-- Download CTA
-- Glassmorphism Cards
-- Font Awesome Icons
-- Smooth Animations
-- Scroll Effects
-- Back To Top Button
-- Progress Bar
-- Lightbox Preview
-- Counter Animation
-- Download Toast
-
----
-
-# 🛠 Built With
+## 🛠️ Built With
 
 - HTML5
 - CSS3
 - JavaScript
 - Font Awesome
-- Google Fonts (Poppins)
 
 ---
 
-# 📱 Android App Features
-
-- ✅ Daily Task Management
-- ⏰ Alarm System
-- 🔔 Smart Notifications
-- 📅 Task History
-- 📄 PDF Export
-- 🌙 Dark Theme
-- 💾 Offline Storage
-- ⚡ Lightweight
-- 📈 Productivity Focused
-
----
-
-# 💻 Run Locally
-
-Clone the repository
-
-```bash
-git clone https://github.com/Amd5500gt/ZeninTodo-Web.git
-```
-
-Open the project
+## 📂 Project Structure
 
 ```text
-Open index.html
+.
+├── index.html
+├── style.css
+├── script.js
+└── assets/
 ```
-
-or
-
-Use VS Code Live Server.
 
 ---
 
-# 🌍 Deployment
-
-This website can be deployed on
-
-- Cloudflare Pages
-- GitHub Pages
-- Netlify
-- Vercel
-
-Current Deployment
+## 🚀 Live Website
 
 https://zenintodo-web.pages.dev/
 
 ---
 
-# 📸 Screenshots
+## 💻 Run Locally
 
-Add screenshots inside
-
-```text
-/assets/
+```bash
+git clone https://github.com/Amd5500gt/ZeninTodo-Web.git
 ```
 
-Example
-
-```
-hero.png
-screenshot1.png
-screenshot2.png
-screenshot3.png
-screenshot4.png
-```
+Then open `index.html` in your browser.
 
 ---
 
-# ❤️ Support
+## 📄 License
 
-If you like this project,
-
-⭐ Star this repository
-
-Fork it
-
-Share it
-
----
-
-# 📄 License
-
-This project is released under the MIT License.
+MIT License
 
 ---
 
@@ -206,6 +70,6 @@ This project is released under the MIT License.
 
 Made with ❤️ by **Harjeet Singh**
 
-Zenin Todo © 2026
+⭐ If you like this project, don't forget to star the repository.
 
 </div>
