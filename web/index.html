@@ -2,15 +2,95 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Zenin Todo - Download APK</title>
+    <title>Zenin Todo - Smart Daily Task Manager | Download APK</title>
+
+    <meta name="title" content="Zenin Todo - Smart Daily Task Manager">
 
     <meta name="description"
-        content="Zenin Todo - Beautiful Daily Task Manager with Alarm, Reminder, PDF Export and Notifications.">
+        content="Download Zenin Todo APK - A beautiful Android productivity app with Daily Tasks, Smart Reminders, Alarm System, Notifications, Task History and PDF Export.">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords"
+        content="Zenin Todo, Todo App, Task Manager, Daily Planner, Reminder App, Android Todo, Alarm App, Productivity App, APK Download, PDF Task Report">
+
+    <meta name="author" content="Harjeet Singh">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="googlebot" content="index,follow">
+
+    <meta name="language" content="English">
+
+    <meta name="revisit-after" content="7 days">
+
+    <meta name="rating" content="General">
+
+    <meta name="theme-color" content="#5B7FFF">
+
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <link rel="canonical" href="https://zenintodo-web.pages.dev/">
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
+
+    <link rel="apple-touch-icon" href="assets/logo.png">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="Zenin Todo - Smart Daily Task Manager">
+
+    <meta property="og:description"
+        content="Download Zenin Todo APK for Android. Smart alarms, reminders, notifications, daily task management and PDF export.">
+
+    <meta property="og:url" content="https://zenintodo-web.pages.dev/">
+
+    <meta property="og:site_name" content="Zenin Todo">
+
+    <meta property="og:image" content="https://zenintodo-web.pages.dev/assets/logo.png">
+
+    <meta property="og:image:width" content="512">
+
+    <meta property="og:image:height" content="512">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Zenin Todo">
+
+    <meta name="twitter:description" content="Beautiful Android Todo App with Alarm, Reminder & PDF Export">
+
+    <meta name="twitter:image" content="https://zenintodo-web.pages.dev/assets/logo.png">
+
+    <!-- Mobile -->
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title" content="Zenin Todo">
+
+    <!-- Manifest -->
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -19,883 +99,1289 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <style>
+        /* ============================================
+                   PLAY STORE STYLE – Zenin Todo
+                   Mobile-First · Premium · Clean
+                =========================================== */
+
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+
+            --primary: #e53935;
+            --primary-dark: #c62828;
+            --secondary: #ff6b6b;
+
+            --green: #2e7d32;
+
+            --dark: #ffffff;
+            --dark2: #fafafa;
+
+            --card: #ffffff;
+
+            --white: #ffffff;
+
+            --text: #444444;
+            --text-light: #777777;
+
+            --border: rgba(0, 0, 0, .08);
+
+            --shadow: 0 8px 30px rgba(0, 0, 0, .08);
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+        }
+
+        body {
+            background: #f8f8f8;
+            color: #222;
+            font-size: 15px;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 90px;
+            /* space for fixed bottom CTA */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: inherit;
+            font: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 580px;
+            margin: 0 auto;
+            padding: 0 18px;
+        }
+
+        /* ---------- SCROLLBAR ---------- */
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* ---------- TOP BAR (Play Store style) ---------- */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, .95);
+            color: #222;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+        }
+
+        .topbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .topbar .back {
+            font-size: 22px;
+            opacity: .7;
+            transition: .25s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .topbar .back:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, .06);
+        }
+
+        .topbar .title {
+            font-size: 18px;
+            font-weight: 600;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .topbar .actions {
+            display: flex;
+            gap: 6px;
+        }
+
+        .topbar .actions button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            opacity: .7;
+            transition: .25s;
+        }
+
+        .topbar .actions button:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, .06);
+        }
+
+        /* ---------- APP HEADER ---------- */
+        .app-header {
+            padding: 24px 0 20px;
+        }
+
+        .app-header .container {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+        }
+
+        .app-icon {
+            flex-shrink: 0;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff5252, #d50000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 44px;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 12px 35px rgba(91, 127, 255, .30);
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .app-meta {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .app-meta .name {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .app-meta .dev {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 6px;
+        }
+
+        .app-meta .rating-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .app-meta .stars {
+            color: #FFD54F;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .app-meta .rating-num {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .app-meta .badge {
+            font-size: 11px;
+            background: rgba(91, 127, 255, .18);
+            color: var(--primary);
+            padding: 2px 12px;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 1px solid rgba(91, 127, 255, .15);
+            white-space: nowrap;
+        }
+
+        /* ---------- INSTALL BUTTON (main) ---------- */
+        .install-wrap {
+            padding: 0 0 18px;
+        }
+
+        .install-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #e53935, #ff5252);
+            border-radius: var(--radius);
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 10px 30px rgba(229,57,53,.30);
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .install-btn i {
+            font-size: 22px;
+        }
+
+        .install-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 40px rgba(91, 127, 255, .45);
+        }
+
+        .install-btn:active {
+            transform: scale(.97);
+        }
+
+        .install-btn .price-tag {
+            font-weight: 500;
+            font-size: 14px;
+            opacity: .85;
+            margin-left: 4px;
+        }
+
+        /* ---------- SCREENSHOTS (carousel) ---------- */
+        .screenshots {
+            padding: 8px 0 20px;
+        }
+
+        .screenshots .label {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .screenshots .label span {
+            color: var(--text-light);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .scroll-x {
+            display: flex;
+            gap: 14px;
+            overflow-x: auto;
+            padding: 4px 0 16px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .scroll-x::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-x .shot {
+            flex: 0 0 180px;
+            scroll-snap-align: start;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .04);
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .scroll-x .shot img {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+            display: block;
+            border-radius: var(--radius-sm);
+            transition: .4s;
+        }
+
+        .scroll-x .shot:hover img {
+            transform: scale(1.04);
+        }
+
+        /* ---------- SECTION CARD (Play Store style) ---------- */
+        .section-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 20px;
+            margin-bottom: 18px;
+            transition: .2s;
+        }
+
+        .section-card .sec-title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-card .sec-title .pill {
+            font-size: 11px;
+            font-weight: 500;
+            background: rgba(91, 127, 255, .15);
+            color: var(--primary);
+            padding: 0 12px;
+            border-radius: 50px;
+            border: 1px solid rgba(91, 127, 255, .12);
+        }
+
+        .section-card p {
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .section-card .read-more {
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 8px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* ---------- WHAT'S NEW ---------- */
+        .whatsnew .version {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 6px;
+        }
+
+        .whatsnew ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .whatsnew ul li {
+            padding: 5px 0 5px 26px;
+            position: relative;
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .whatsnew ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--green);
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        /* ---------- ADDITIONAL INFO (grid) ---------- */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 20px;
+            margin-top: 4px;
+        }
+
+        .info-grid .item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-grid .item .label {
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            font-weight: 500;
+        }
+
+        .info-grid .item .value {
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 2px;
+        }
+
+        /* ---------- REVIEWS ---------- */
+        .review-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .review-item {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        .review-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .review-item .rev-head {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+
+        .review-item .rev-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .review-item .rev-name {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .review-item .rev-stars {
+            color: #FFD54F;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-left: auto;
+        }
+
+        .review-item .rev-text {
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-top: 4px;
+        }
+
+        .review-item .rev-date {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        /* ---------- SIMILAR APPS ---------- */
+        .similar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .similar-app {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px 12px;
+            text-align: center;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .similar-app:hover {
+            transform: translateY(-4px);
+            background: rgba(91, 127, 255, .10);
+            border-color: rgba(91, 127, 255, .25);
+        }
+
+        .similar-app .s-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #5B7FFF, #7C4DFF);
+            margin: 0 auto 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .similar-app .s-name {
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .similar-app .s-dev {
+            font-size: 11px;
+            color: var(--text-light);
+        }
+
+        /* ---------- BOTTOM FIXED CTA ---------- */
+        .bottom-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            background: linear-gradient(135deg, #ff5252, #d50000);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: space-between;
+        }
+
+        .bottom-cta .b-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .bottom-cta .b-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .bottom-cta .b-info .b-name {
+            font-size: 15px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bottom-cta .b-info .b-rating {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .bottom-cta .b-info .b-rating i {
+            color: #FFD54F;
+            margin-right: 4px;
+        }
+
+        .bottom-cta .b-btn {
+            padding: 11px 28px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+            box-shadow: 0 6px 20px rgba(91, 127, 255, .30);
+            transition: .3s;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .bottom-cta .b-btn:hover {
+            transform: scale(1.04);
+            box-shadow: 0 8px 28px rgba(91, 127, 255, .40);
+        }
+
+        .bottom-cta .b-btn:active {
+            transform: scale(.95);
+        }
+
+        /* ---------- TOAST ---------- */
+        .toast {
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: white;
+            color: #222;
+            border: 1px solid var(--border);
+            padding: 14px 24px;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+            z-index: 99999;
+            opacity: 0;
+            pointer-events: none;
+            transition: .35s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            backdrop-filter: blur(15px);
+            max-width: 90%;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: auto;
+        }
+
+        .toast i {
+            color: var(--green);
+            font-size: 20px;
+        }
+
+        /* ---------- LIGHTBOX ---------- */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .92);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            cursor: pointer;
+            backdrop-filter: blur(12px);
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: .3s;
+        }
+
+        .lightbox.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox img {
+            max-width: 380px;
+            max-height: 80vh;
+            border-radius: 22px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .6);
+            transform: scale(.92);
+            transition: .4s;
+        }
+
+        .lightbox.open img {
+            transform: scale(1);
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        /* Tablets & small laptops */
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+                padding: 0 24px;
+            }
+
+            .app-icon {
+                width: 108px;
+                height: 108px;
+                font-size: 50px;
+                border-radius: 50%;
+            }
+
+            .app-meta .name {
+                font-size: 28px;
+            }
+
+            .scroll-x .shot {
+                flex: 0 0 220px;
+            }
+
+            .scroll-x .shot img {
+                height: 380px;
+            }
+
+            .similar-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .bottom-cta {
+                padding: 14px 24px;
+            }
+
+            .bottom-cta .b-btn {
+                padding: 13px 34px;
+                font-size: 17px;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .container {
+                max-width: 720px;
+                padding: 0 32px;
+            }
+
+            body {
+                padding-bottom: 0;
+            }
+
+            .bottom-cta {
+                display: none;
+            }
+
+            .app-header {
+                padding: 32px 0 24px;
+            }
+
+            .app-icon {
+                width: 120px;
+                height: 120px;
+                font-size: 56px;
+                border-radius: 50%;
+            }
+
+            .app-meta .name {
+                font-size: 32px;
+            }
+
+            .scroll-x .shot {
+                flex: 0 0 260px;
+            }
+
+            .scroll-x .shot img {
+                height: 440px;
+            }
+
+            .similar-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .section-card {
+                padding: 28px 26px;
+                border-radius: 22px;
+            }
+
+            .install-btn {
+                padding: 20px 28px;
+                font-size: 20px;
+                border-radius: 22px;
+            }
+
+            .topbar .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 820px;
+            }
+
+            .topbar .container {
+                max-width: 820px;
+            }
+        }
+
+        /* ---------- UTILITY ---------- */
+        .mt-1 {
+            margin-top: 6px;
+        }
+
+        .mt-2 {
+            margin-top: 14px;
+        }
+
+        .mt-3 {
+            margin-top: 22px;
+        }
+
+        .mb-1 {
+            margin-bottom: 6px;
+        }
+
+        .mb-2 {
+            margin-bottom: 14px;
+        }
+
+        .gap-1 {
+            gap: 6px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .text-muted {
+            color: var(--text-light);
+        }
+
+        .text-sm {
+            font-size: 13px;
+        }
+
+        /* ---------- ANIMATIONS ---------- */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .app-header,
+        .install-wrap,
+        .screenshots,
+        .section-card {
+            animation: fadeUp .5s ease forwards;
+        }
+
+        .install-wrap {
+            animation-delay: .08s;
+        }
+
+        .screenshots {
+            animation-delay: .16s;
+        }
+
+        .section-card:nth-of-type(1) {
+            animation-delay: .24s;
+        }
+
+        .section-card:nth-of-type(2) {
+            animation-delay: .32s;
+        }
+
+        .section-card:nth-of-type(3) {
+            animation-delay: .40s;
+        }
+
+        .section-card:nth-of-type(4) {
+            animation-delay: .48s;
+        }
+
+        .section-card:nth-of-type(5) {
+            animation-delay: .56s;
+        }
+
+        /* ---------- PROGRESS BAR (scroll indicator) ---------- */
+        #progressBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+           background:linear-gradient(90deg,#ff1744,#d50000);
+            width: 0;
+            z-index: 999999;
+            border-radius: 0 3px 3px 0;
+            transition: width .1s;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="blur one"></div>
-<div class="blur two"></div>
-
-<header>
-
-<div class="container nav">
-
-<div class="logo">
-
-<img src="assets/logo.png" alt="Zenin Todo">
-
-<h2>Zenin Todo</h2>
-
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-
-<a href="#features">Features</a>
-
-<a href="#screenshots">Screenshots</a>
-
-<a href="#reviews">Reviews</a>
-
-<a href="#faq">FAQ</a>
-
-</nav>
-
-<a class="downloadTop" href="/assets/zeninTodo.apk" download>
-
-<i class="fa-solid fa-download"></i>
-
-Download APK
-
-</a>
-
-</div>
-
-</header>
-
-
-
-<section class="hero">
-
-<div class="container heroGrid">
-
-<div class="left">
-
-<span class="tag">
-
-✨ Productivity App
-
-</span>
-
-<h1>
-
-Stay Organized Every Day.
-
-</h1>
-
-<p>
-
-Zenin Todo helps you manage daily tasks, reminders,
-notifications and alarms effortlessly.
-
-Generate beautiful PDF reports of all your completed
-tasks anytime.
-
-</p>
-
-<div class="buttons">
-
-<a href="/assets/zeninTodo.apk"
-download
-class="primary">
-
-<i class="fa-solid fa-download"></i>
-
-Download APK
-
-</a>
-
-<a href="#features"
-class="secondary">
-
-Learn More
-
-</a>
-
-</div>
-
-<div class="stats">
-
-<div>
-
-<h2>4.9★</h2>
-
-<span>Rating</span>
-
-</div>
-
-<div>
-
-<h2>10K+</h2>
-
-<span>Downloads</span>
-
-</div>
-
-<div>
-
-<h2>8 MB</h2>
-
-<span>Size</span>
-
-</div>
-
-<div>
-
-<h2>v1.0</h2>
-
-<span>Version</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<div class="phone">
-
-<img src="assets/hero.png">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="info">
-
-<div class="container">
-
-<div class="card">
-
-<i class="fa-solid fa-mobile-screen-button"></i>
-
-<h3>Android</h3>
-
-<p>Android 8.0+</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-bell"></i>
-
-<h3>Alarm</h3>
-
-<p>Smart Reminder System</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-file-pdf"></i>
-
-<h3>PDF Export</h3>
-
-<p>Daily Task Reports</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-database"></i>
-
-<h3>Offline</h3>
-
-<p>Room Database</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="features">
-
-<div class="container">
-
-<div class="heading">
-
-<h2>Awesome Features</h2>
-
-<p>
-
-Everything you need to stay productive.
-
-</p>
-
-</div>
-
-
-
-<div class="featureGrid">
-
-<div class="feature">
-
-<i class="fa-solid fa-list-check"></i>
-
-<h3>Task Management</h3>
-
-<p>
-
-Create unlimited daily tasks easily.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-clock"></i>
-
-<h3>Reminders</h3>
-
-<p>
-
-Never miss important work again.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-bell"></i>
-
-<h3>Alarm Notification</h3>
-
-<p>
-
-Powerful alarm system with notifications.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-calendar-days"></i>
-
-<h3>History</h3>
-
-<p>
-
-Track completed tasks by date.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-file-pdf"></i>
-
-<h3>PDF Reports</h3>
-
-<p>
-
-Export your daily records instantly.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-moon"></i>
-
-<h3>Dark Mode</h3>
-
-<p>
-
-Comfortable beautiful dark theme.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-bolt"></i>
-
-<h3>Fast</h3>
-
-<p>
-
-Lightweight and blazing fast.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-lock"></i>
-
-<h3>Private</h3>
-
-<p>
-
-Everything stays safely on your device.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="downloadBanner">
-
-<div class="container banner">
-
-<div>
-
-<h2>
-
-Download Zenin Todo Today
-
-</h2>
-
-<p>
-
-Organize your life with alarms, reminders,
-notifications and PDF reports.
-
-</p>
-
-</div>
-
-<a href="/assets/zeninTodo.apk"
-download>
-
-<i class="fa-solid fa-download"></i>
-
-Download APK
-
-</a>
-
-</div>
-
-</section><!-- =========================
-     Screenshots
-========================== -->
-
-<section id="screenshots">
-
-    <div class="container">
-
-        <div class="heading">
-
-            <h2>App Screenshots</h2>
-
-            <p>
-                Simple, beautiful and powerful interface.
-            </p>
-
-        </div>
-
-        <div class="screenGrid">
-
-            <div class="screenCard">
-                <img src="assets/screenshot1.png" alt="">
-            </div>
-
-            <div class="screenCard">
-                <img src="assets/screenshot2.png" alt="">
-            </div>
-
-            <div class="screenCard">
-                <img src="assets/screenshot3.png" alt="">
-            </div>
-
-            <div class="screenCard">
-                <img src="assets/screenshot4.png" alt="">
-            </div>
-
-        </div>
-
+    <!-- ====== PROGRESS BAR ====== -->
+    <div id="progressBar"></div>
+
+    <!-- ====== TOAST ====== -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Added to your library!</span>
     </div>
 
-</section>
-
-
-<!-- =========================
-        Statistics
-========================== -->
-
-<section class="statsSection">
-
-<div class="container">
-
-<div class="heading">
-
-<h2>Trusted by Users</h2>
-
-<p>
-
-Thousands of users organize their day using Zenin Todo.
-
-</p>
-
-</div>
-
-<div class="counterGrid">
-
-<div class="counter">
-
-<h1>10K+</h1>
-
-<span>Downloads</span>
-
-</div>
-
-<div class="counter">
-
-<h1>50K+</h1>
-
-<span>Tasks Created</span>
-
-</div>
-
-<div class="counter">
-
-<h1>8K+</h1>
-
-<span>PDF Generated</span>
-
-</div>
-
-<div class="counter">
-
-<h1>99%</h1>
-
-<span>User Satisfaction</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-        Reviews
-========================== -->
-
-<section id="reviews">
-
-<div class="container">
-
-<div class="heading">
-
-<h2>User Reviews</h2>
-
-<p>
-
-People love Zenin Todo.
-
-</p>
-
-</div>
-
-<div class="reviewGrid">
-
-<div class="review">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-This app completely changed how I manage my daily routine.
-Simple, clean and very useful.
-
-</p>
-
-<div class="user">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7qnrDd-bAPN3GW3BP0rW3d_9067C6BFQmWWeWuegcg&s=10">
-
-<div>
-
-<h4>Rahul Sharma</h4>
-
-<span>Verified User</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="review">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-Reminder and Alarm system is awesome.
-PDF Export feature is my favourite.
-
-</p>
-
-<div class="user">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFTbZgi6mf-0VAun4OBqMhGhwUr_Hs0HvwShY-KCEFg&s=10">
-
-<div>
-
-<h4>Priya Singh</h4>
-
-<span>Verified User</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="review">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-Very lightweight and smooth.
-Looks premium.
-
-</p>
-
-<div class="user">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTrog2MZCOPFY1HtAbtbnkO7vR3QfcWMlEE8e6B_t4qmCBdLopro4rvg&s=10">
-
-<div>
-
-<h4>Harsh Verma</h4>
-
-<span>Verified User</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-            FAQ
-========================== -->
-
-<section id="faq">
-
-<div class="container">
-
-<div class="heading">
-
-<h2>Frequently Asked Questions</h2>
-
-</div>
-
-<div class="faq">
-
-<div class="faqItem">
-
-<button>
-
-How to install APK?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="answer">
-
-Download the APK and enable "Install from Unknown Sources"
-if needed.
-
-</div>
-
-</div>
-
-
-
-<div class="faqItem">
-
-<button>
-
-Does this app work offline?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="answer">
-
-Yes.
-Everything works offline.
-
-</div>
-
-</div>
-
-
-
-<div class="faqItem">
-
-<button>
-
-Can I export PDF?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="answer">
-
-Yes.
-Generate daily reports with one click.
-
-</div>
-
-</div>
-
-
-
-<div class="faqItem">
-
-<button>
-
-Is my data safe?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="answer">
-
-Your data remains stored locally on your device.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-      Download CTA
-========================== -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-
-Ready to boost your productivity?
-
-</h2>
-
-<p>
-
-Download Zenin Todo now and start organizing your life.
-
-</p>
-
-<a href="/assets/zeninTodo.apk"
-download>
-
-<i class="fa-solid fa-download"></i>
-
-Download APK
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-        Footer
-========================== -->
-
-<footer>
-
-<div class="container footerGrid">
-
-<div>
-
-<h2>
-
-Zenin Todo
-
-</h2>
-
-<p>
-
-Beautiful Daily Task Manager for Android.
-
-</p>
-
-</div>
-
-<div>
-
-<h3>
-
-Quick Links
-
-</h3>
-
-<a href="#features">
-
-Features
-
-</a>
-
-<a href="#screenshots">
-
-Screenshots
-
-</a>
-
-<a href="#reviews">
-
-Reviews
-
-</a>
-
-<a href="#faq">
-
-FAQ
-
-</a>
-
-</div>
-
-<div>
-
-<h3>
-
-Download
-
-</h3>
-
-<a href="/assets/ZeninTodo.apk"
-download>
-
-Download APK
-
-</a>
-
-<a href="#">
-
-Privacy Policy
-
-</a>
-
-<a href="#">
-
-Terms
-
-</a>
-
-</div>
-
-<div>
-
-<h3>
-
-Connect
-
-</h3>
-
-<a href="#">
-
-GitHub
-
-</a>
-
-<a href="#">
-
-Email
-
-</a>
-
-<a href="#">
-
-Instagram
-
-</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-© 2026 Zenin Todo.
-Made with ❤️ by Harjeet Singh.
-
-</div>
-
-</footer>
-
-
-
-<button id="topBtn">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<script src="script.js"></script>
+    <!-- ====== LIGHTBOX ====== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" alt="Screenshot" />
+    </div>
+
+    <!-- ====== TOP BAR ====== -->
+    <header class="topbar">
+        <div class="container">
+            <button class="back" aria-label="Back" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <span class="title">Zenin Todo</span>
+            <div class="actions">
+                <button aria-label="Search"><i class="fas fa-search"></i></button>
+                <button aria-label="More"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+
+        <!-- APP HEADER -->
+        <section class="app-header">
+            <div class="container">
+                <div class="app-icon">
+                    <img src="./assets/logo.png" alt="logo">
+                </div>
+                <div class="app-meta">
+                    <div class="name">Zenin Todo</div>
+                    <div class="dev">Zenin Labs · Productivity</div>
+                    <div class="rating-row">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-num">4.9</span>
+                        <span class="badge">Editor's Choice</span>
+                    </div>
+                    <div class="flex flex-center gap-1 mt-1 text-sm text-muted">
+                        <i class="fas fa-download" style="font-size:12px;"></i>
+                        1M+ downloads
+                        <span style="margin:0 6px;">·</span>
+                        <i class="fas fa-shield-alt" style="font-size:12px;"></i>
+                        Rated 4+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTALL BUTTON (main) -->
+        <div class="install-wrap">
+            <div class="container">
+                <button class="install-btn" onclick="handleInstall()">
+                    <i class="fas fa-download"></i>
+                    Install
+                    <span class="price-tag">· Free</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SCREENSHOTS -->
+        <section class="screenshots">
+            <div class="container">
+                <div class="label">
+                    Screenshots
+                    <span>6 images</span>
+                </div>
+                <div class="scroll-x" id="screenshotScroll">
+                    <div class="shot" onclick="openLightbox('./assets/screenshot1.png')">
+                        <img src="./assets/screenshot1.png" alt="Screenshot 1" loading="lazy" />
+                    </div>
+                    <div class="shot" onclick="openLightbox('./assets/screenshot2.png')">
+                        <img src="./assets/screenshot2.png" alt="Screenshot 2" loading="lazy" />
+                    </div>
+                    <div class="shot" onclick="openLightbox('./assets/screenshot3.png')">
+                        <img src="./assets/screenshot3.png" alt="Screenshot 3" loading="lazy" />
+                    </div>
+                    <div class="shot" onclick="openLightbox('./assets/screenshot4.png')">
+                        <img src="./assets/screenshot4.png" alt="Screenshot 4" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT THIS APP -->
+        <div class="container">
+            <div class="section-card">
+                <div class="sec-title">
+                    About this app
+                    <span class="pill">v3.2.1</span>
+                </div>
+                <p>
+                    Zenin Todo is the ultimate task manager built for speed and clarity.
+                    Organise your daily tasks, projects, and goals with a beautiful,
+                    intuitive interface. Stay focused with smart reminders, priority
+                    flags, and real-time sync across all your devices.
+                    <br /><br />
+                    Whether you're a student, professional, or creative, Zenin Todo
+                    adapts to your workflow. No clutter. Just what matters.
+                </p>
+                <span class="read-more" onclick="showToast('Full description loaded!')">Read more</span>
+            </div>
+
+            <!-- WHAT'S NEW -->
+            <div class="section-card whatsnew">
+                <div class="sec-title">
+                    What's new
+                    <span class="pill">Latest</span>
+                </div>
+                <div class="version">Version 3.2.1 · 2 days ago</div>
+                <ul>
+                    <li>New dark mode optimisations for AMOLED screens</li>
+                    <li>Faster sync with instant push notifications</li>
+                    <li>Bug fixes for recurring tasks</li>
+                    <li>Improved widget performance</li>
+                </ul>
+            </div>
+
+            <!-- ADDITIONAL INFO -->
+            <div class="section-card">
+                <div class="sec-title">Additional information</div>
+                <div class="info-grid">
+                    <div class="item">
+                        <span class="label">Updated</span>
+                        <span class="value">July 8, 2026</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Size</span>
+                        <span class="value">24 MB</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Downloads</span>
+                        <span class="value">1,234,567</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Content Rating</span>
+                        <span class="value">Everyone</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Permissions</span>
+                        <span class="value">View details</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Offered by</span>
+                        <span class="value">Zenin Labs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEWS -->
+            <div class="section-card">
+                <div class="sec-title">
+                    Reviews
+                    <span class="pill">4.9 ★</span>
+                </div>
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="rev-head">
+                            <div class="rev-avatar"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7qnrDd-bAPN3GW3BP0rW3d_9067C6BFQmWWeWuegcg&s=10"
+                                    style="border-radius: 50%;" alt="user1"></div>
+                            <span class="rev-name">Alex Rivera</span>
+                            <span class="rev-stars">★★★★★</span>
+                        </div>
+                        <div class="rev-text">
+                            "Hands down the best todo app I've ever used. The UI is
+                            gorgeous and it actually helps me stay productive."
+                        </div>
+                        <div class="rev-date">July 5, 2026</div>
+                    </div>
+                    <div class="review-item">
+                        <div class="rev-head">
+                            <div class="rev-avatar"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFTbZgi6mf-0VAun4OBqMhGhwUr_Hs0HvwShY-KCEFg&s=10"
+                                    style="border-radius: 50%;" alt="user3"></div>
+                            <span class="rev-name">Samira Chen</span>
+                            <span class="rev-stars">★★★★★</span>
+                        </div>
+                        <div class="rev-text">
+                            "Finally an app that doesn't overcomplicate things.
+                            Zenin Todo is simple, fast, and beautiful."
+                        </div>
+                        <div class="rev-date">July 1, 2026</div>
+                    </div>
+                    <div class="review-item">
+                        <div class="rev-head">
+                            <div class="rev-avatar">M</div>
+                            <span class="rev-name">Marcus Lee</span>
+                            <span class="rev-stars">★★★★☆</span>
+                        </div>
+                        <div class="rev-text">
+                            "Great app! Would love to see better widget customisation
+                            in the next update."
+                        </div>
+                        <div class="rev-date">June 28, 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIMILAR APPS -->
+            <div class="section-card" style="margin-bottom: 24px;">
+                <div class="sec-title">Similar apps</div>
+                <div class="similar-grid">
+                    <div class="similar-app" onclick="showToast('Coming soon…')">
+                        <div class="s-icon" style="background:linear-gradient(135deg,#FF6B6B,#ee5a24);">F</div>
+                        <div class="s-name">Focus Flow</div>
+                        <div class="s-dev">Mind Labs</div>
+                    </div>
+                    <div class="similar-app" onclick="showToast('Coming soon…')">
+                        <div class="s-icon" style="background:linear-gradient(135deg,#00b894,#00a86b);">T</div>
+                        <div class="s-name">TaskMate</div>
+                        <div class="s-dev">Pulse Studio</div>
+                    </div>
+                    <div class="similar-app" onclick="showToast('Coming soon…')">
+                        <div class="s-icon" style="background:linear-gradient(135deg,#fdcb6e,#f39c12);">D</div>
+                        <div class="s-name">Day Planner</div>
+                        <div class="s-dev">Nimbus</div>
+                    </div>
+                    <div class="similar-app" onclick="showToast('Coming soon…')">
+                        <div class="s-icon" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe);">H</div>
+                        <div class="s-name">Habit Tracker</div>
+                        <div class="s-dev">Zen Labs</div>
+                    </div>
+                    <div class="similar-app" onclick="showToast('Coming soon…')">
+                        <div class="s-icon" style="background:linear-gradient(135deg,#fd79a8,#e84393);">N</div>
+                        <div class="s-name">NoteZen</div>
+                        <div class="s-dev">Craft Studio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ====== BOTTOM FIXED CTA ====== -->
+    <div class="bottom-cta" id="bottomCta">
+        <div class="b-icon">Z</div>
+        <div class="b-info">
+            <div class="b-name">Zenin Todo</div>
+            <div class="b-rating">
+                <i class="fas fa-star"></i> 4.9 · Free
+            </div>
+        </div>
+        <button class="b-btn" onclick="handleInstall()">Install</button>
+    </div>
+
+    <!-- ====== JAVASCRIPT ====== -->
+    <script>
+        // ---------- TOAST ----------
+        let toastTimer;
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            const m = document.getElementById('toastMsg');
+            m.textContent = msg || 'Done!';
+            t.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
+        }
+
+        // ---------- INSTALL ----------
+        function handleInstall() {
+            showToast('🎉 Zenin Todo is installing…');
+            // Simulate install
+            setTimeout(() => {
+                showToast('✅ Installed successfully!');
+            }, 1800);
+        }
+
+        // ---------- LIGHTBOX ----------
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            img.src = src;
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // ---------- PROGRESS BAR (scroll) ----------
+        const progressBar = document.getElementById('progressBar');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = progress + '%';
+        });
+
+        // ---------- SMOOTH SCROLL FOR SCREENSHOTS (touch friendly) ----------
+        const scrollX = document.getElementById('screenshotScroll');
+        let isDown = false;
+        let startX;
+        let scrollLeftPos;
+
+        scrollX.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - scrollX.offsetLeft;
+            scrollLeftPos = scrollX.scrollLeft;
+            scrollX.style.cursor = 'grabbing';
+        });
+
+        scrollX.addEventListener('mouseleave', () => {
+            isDown = false;
+            scrollX.style.cursor = 'grab';
+        });
+
+        scrollX.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollX.style.cursor = 'grab';
+        });
+
+        scrollX.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollX.offsetLeft;
+            const walk = (x - startX) * 1.2;
+            scrollX.scrollLeft = scrollLeftPos - walk;
+        });
+
+        // ---------- AUTO-HIDE TOP BAR ON SCROLL (optional polish) ----------
+        let lastScroll = 0;
+        const topbar = document.querySelector('.topbar');
+
+        window.addEventListener('scroll', () => {
+            const current = window.scrollY;
+            if (current > 80 && current > lastScroll) {
+                topbar.style.transform = 'translateY(-100%)';
+                topbar.style.transition = 'transform .3s ease';
+            } else {
+                topbar.style.transform = 'translateY(0)';
+            }
+            lastScroll = current;
+        });
+
+        // Reset on top
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < 20) {
+                topbar.style.transform = 'translateY(0)';
+            }
+        });
+    </script>
 
 </body>
 
