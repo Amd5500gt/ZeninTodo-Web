@@ -1281,7 +1281,7 @@
         // ---------- TOAST ----------
         let toastTimer;
 
-        function showToast(msg) {
+        function showToast(msg) {9
             const t = document.getElementById('toast');
             const m = document.getElementById('toastMsg');
             m.textContent = msg || 'Done!';
@@ -1292,11 +1292,8 @@
 
         // ---------- INSTALL ----------
         function handleInstall() {
-            showToast('🎉 Zenin Todo is installing…');
-            // Simulate install
-            setTimeout(() => {
-                showToast('✅ Installed successfully!');
-            }, 1800);
+            showToast('Downloading…');
+            window.location.href="./assets/ZeninTodo.apk"
         }
 
         // ---------- LIGHTBOX ----------
